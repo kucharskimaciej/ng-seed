@@ -10,7 +10,7 @@
 
 [One-time bindings](http://blog.thoughtram.io/angularjs/2014/10/14/exploring-angular-1.3-one-time-bindings.html)
 
-##$ Replace $watch with getters
+## Replace $watch with getters
 
 [Code examples source](http://csharperimage.jeremylikness.com/2014/11/the-top-5-mistakes-angularjs-developers_28.html)
 

@@ -2,7 +2,7 @@ describe("Date filters", function() {
     var $filter;
     $filter = null;
 
-    beforeEach(module('app'));
+    beforeEach(module('seed'));
 
     beforeEach(inject(function(_$filter_) {
          $filter = _$filter_;

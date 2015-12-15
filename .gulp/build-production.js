@@ -5,7 +5,7 @@ var concat = require('gulp-concat');
 var inject = require('gulp-inject');
 var merge = require('gulp-merge');
 var filesort = require('gulp-angular-filesort');
-var ngmin = require('gulp-ngmin');
+var ngAnnotate = require('gulp-ng-annotate');
 var uglify = require('gulp-uglify');
 
 var cfg = require('./config');
@@ -35,7 +35,7 @@ function buildApp () {
     return gulp.src(cfg.paths.app)
         .pipe(filesort())
         .pipe(concat('app.js'))
-        .pipe(ngmin())
+        .pipe(ngAnnotate())
         .pipe(uglify({
             mangle: true
         }));

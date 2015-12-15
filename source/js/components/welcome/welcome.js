@@ -1,5 +1,6 @@
 (function() {
-    angular.module('controllers').controller('SomeController', function(Products) {
+    angular.module('components')
+    .controller('WelcomeCtrl', function(Products) {
         var vm = this;
 
         Products.getAll().then(function (res) {
@@ -12,4 +13,4 @@
         }
     });
 
-}).call(this);
+}());

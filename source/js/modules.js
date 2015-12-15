@@ -1,13 +1,13 @@
 angular.module('filters', []);
-angular.module('directives', []);
-angular.module('controllers', []);
+angular.module('components', []);
 angular.module('services', []);
 angular.module('templates', []);
 
-angular.module('app', [
+angular.module('seed', [
     'filters',
-    'directives',
-    'controllers',
+    'components',
     'services',
-    'templates'
+    'templates',
+
+    "ui.router"
 ]);

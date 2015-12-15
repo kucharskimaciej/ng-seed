@@ -1,13 +1,14 @@
 (function() {
-    angular.module('directives').directive('postDate', function() {
+    angular.module('components')
+    .directive('postDate', function() {
         return {
             scope: {
                 date: "="
             },
             restrict: 'E',
             replace: true,
-            templateUrl: 'directives/post_date.tpl.html'
+            templateUrl: 'components/post_date/post_date.tpl.html'
         };
     });
 
-}).call(this);
+}());

@@ -1,24 +1,11 @@
 (function() {
-    function setupController ($rootScope, $controller, $q) {
-        var self;
-        self = this;
-
-        this.deferred = $q.defer();
-        this.scope = $rootScope.$new();
-        this.ProductServiceMock = {
-            getAll: jasmine.createSpy().and.returnValue(self.deferred.promise)
-        };
-
-        this.controller = $controller("SomeController", {
-            $scope: self.scope,
-            Products: this.ProductServiceMock
-        });
-
-        this.scope.$digest();
-    }
 
     describe("controller: someController", function() {
-        beforeEach(module('app'));
+        // load the module to be tested
+        beforeEach(module('seed'));
+
+        // prepare controller
+        // inject(fn) : the arguments will be automatically injected
         beforeEach(inject(setupController));
 
 
@@ -52,5 +39,22 @@
         })
     });
 
+    function setupController ($rootScope, $controller, $q) {
+        var self;
+        self = this;
+
+        this.deferred = $q.defer();
+        this.scope = $rootScope.$new();
+        this.ProductServiceMock = {
+            getAll: jasmine.createSpy().and.returnValue(self.deferred.promise)
+        };
+
+        this.controller = $controller("WelcomeCtrl", {
+            $scope: this.scope,
+            Products: this.ProductServiceMock
+        });
+
+        this.scope.$digest();
+    }
 
 }).call(this);

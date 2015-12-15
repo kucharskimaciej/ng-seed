@@ -2,11 +2,7 @@
     var convert, _default;
 
     convert = function(i) {
-        if (i instanceof Date) {
-            return i;
-        } else {
-            return new Date(i);
-        }
+      return i instanceof Date ? i : new Date(i);
     };
 
     _default = "";
@@ -37,4 +33,4 @@
         };
     });
 
-}).call(this);
+}());

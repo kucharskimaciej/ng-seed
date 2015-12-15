@@ -1,6 +1,6 @@
 (function() {
     describe("service", function() {
-        beforeEach(module('app'));
+        beforeEach(module('seed'));
         beforeEach(inject(function($httpBackend, Products) {
             this.$httpBackend = $httpBackend;
             this.Products = Products;

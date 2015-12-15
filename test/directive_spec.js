@@ -1,6 +1,6 @@
 (function() {
     describe("directive: post-date", function() {
-        beforeEach(module('app'));
+        beforeEach(module('seed'));
         beforeEach(inject(function($rootScope, $compile) {
             var el;
 

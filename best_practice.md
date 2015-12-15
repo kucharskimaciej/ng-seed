@@ -3,9 +3,9 @@ Everything should be a component. Even pages.
 
 ![Components](http://busypeoples.github.io/img/component_example.png)
 
-[Thinking in components](http://busypeoples.github.io/post/thinking-in-components-angular-js/)
-[Thinking in react](http://facebook.github.io/react/docs/thinking-in-react.html)
-[Smart and dumb](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.42mahx8i0)
+* [Thinking in components](http://busypeoples.github.io/post/thinking-in-components-angular-js/)
+* [Thinking in react](http://facebook.github.io/react/docs/thinking-in-react.html)
+* [Smart and dumb](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.42mahx8i0)
 
 # $scope is only for events and watchers
 Everything else should be passed to view via the `controller as` syntax.
@@ -18,12 +18,12 @@ $scope.$on('$destroy', unbind);
 ```
 
 # Use a lot of getters
-[angular.extend](http://moduscreate.com/angularjs-tricks-with-angular-extend/)
+* [angular.extend](http://moduscreate.com/angularjs-tricks-with-angular-extend/)
 
 # File structure
 
-[one](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
-[two](http://www.johnpapa.net/angular-growth-structure/)
+* [one](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
+* [two](http://www.johnpapa.net/angular-growth-structure/)
 
 # Correct directive syntax
 
@@ -50,7 +50,7 @@ function GoodieCtrl(deps) {
 // ...
 
 ```
-[bindToController](http://blog.thoughtram.io/angularjs/2015/01/02/exploring-angular-1.3-bindToController.html)
+* [bindToController](http://blog.thoughtram.io/angularjs/2015/01/02/exploring-angular-1.3-bindToController.html)
 
 # ...or use component syntax
 
@@ -78,7 +78,7 @@ app.component('goodie', {
 
 Make sure you use linters and code quality tools.
 
-[ng-hint](http://blog.thoughtram.io/angularjs/2014/11/06/exploring-angular-1.3-angular-hint.html)
+* [ng-hint](http://blog.thoughtram.io/angularjs/2014/11/06/exploring-angular-1.3-angular-hint.html)
 
 
 # Stuff to read
